@@ -1,5 +1,5 @@
 {
-  "name": "Binaural",
+  "name": "Binaural Echo",
   "manufacturer": "Lightlike",
   "version": "1.0.0",
   "format": "vst2",
@@ -8,10 +8,10 @@
   "numInputs": 2,
   "numOutputs": 2,
   "category": "Effect",
-  "file32": "VST/binaural-arm32.so",
-  "file64": "VST/binaural-arm64.so",
-  "description": "Binaural: a gain / tone / mix effect for the MPC. Describe your plugin here.",
+  "file32": "VST/binaural-echo-arm32.so",
+  "file64": "VST/binaural-echo-arm64.so",
+  "description": "Binaural Echo: a 3D headphone panner with echoes that travel around the head. Azimuth, elevation and distance on the Q-Links; built-in motion; head-model, first-order ambisonic and lightweight render modes; air absorption and a small room.",
   "author": "Lightlike",
-  "url": "https://github.com/lightlikemusic/binaural",
+  "url": "https://github.com/lightlikemusic/binaural-echo",
   "license": "MIT"
 }

@@ -1,13 +1,162 @@
 {
+  "kit": "cyan",
+  "style": {
+    "background": "ff0b0c10",
+    "text": "ffe9edf5",
+    "muted": "ff7d8496"
+  },
   "pages": [
     {
       "name": "MAIN",
       "controls": [
-        "Gain",
-        "Tone",
-        "Mix"
+        {
+          "param": "Azimuth",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Elevation",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "Distance",
+          "widget": "knob"
+        },
+        {
+          "param": "Mix",
+          "widget": "fader"
+        }
+      ]
+    },
+    {
+      "name": "MOTION",
+      "controls": [
+        {
+          "param": "Motion",
+          "widget": "slider"
+        },
+        {
+          "param": "Sync",
+          "widget": "switch"
+        },
+        "empty",
+        "empty",
+        {
+          "param": "Rate",
+          "widget": "knob",
+          "visibleWhen": {
+            "param": "Sync",
+            "choice": "Off"
+          }
+        },
+        {
+          "param": "Reverse",
+          "widget": "switch"
+        },
+        "empty",
+        "empty",
+        {
+          "param": "Depth",
+          "widget": "knob"
+        },
+        "empty",
+        "empty",
+        "empty",
+        {
+          "param": "Division",
+          "widget": "slider",
+          "visibleWhen": {
+            "param": "Sync",
+            "choice": "On"
+          }
+        },
+        "empty",
+        "empty",
+        "empty"
+      ]
+    },
+    {
+      "name": "ECHO",
+      "controls": [
+        {
+          "param": "Echo",
+          "widget": "knob"
+        },
+        {
+          "param": "Echo Time",
+          "widget": "knob"
+        },
+        {
+          "param": "Step",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        "empty",
+        {
+          "param": "Feedback",
+          "widget": "knob"
+        },
+        {
+          "param": "Echo Sync",
+          "widget": "switch"
+        },
+        {
+          "param": "Tilt",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        "empty",
+        {
+          "param": "Damping",
+          "widget": "knob"
+        },
+        {
+          "param": "Echo Div",
+          "widget": "slider"
+        },
+        "empty",
+        "empty"
+      ]
+    },
+    {
+      "name": "SPACE",
+      "controls": [
+        {
+          "param": "Intensity",
+          "widget": "knob"
+        },
+        {
+          "param": "Mode",
+          "widget": "switch"
+        },
+        "empty",
+        "empty",
+        {
+          "param": "Width",
+          "widget": "knob"
+        },
+        {
+          "param": "Volume",
+          "widget": "fader"
+        },
+        "empty",
+        "empty",
+        {
+          "param": "Room",
+          "widget": "knob"
+        },
+        "empty",
+        "empty",
+        "empty",
+        {
+          "param": "Air",
+          "widget": "knob"
+        },
+        "empty",
+        "empty",
+        "empty"
       ]
     }
-  ],
-  "style": { "background": "ff1e1d1e", "accent": "ffd31145", "text": "ffffffff", "muted": "ff6a6a6c" }
+  ]
 }
